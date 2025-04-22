@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>FencingKart</title>
+    <link rel="shortcut icon" href="image/logo.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <!-- Owl Carousel css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <!-- Owl Carousel css-->
+
+
+  <!-- jquery css-->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <!-- jquery css-->
+
+</head>
+
+<body>
+  <section class="home-contact">
+    <div class="slider"></div>
+    <div class="headerbg-contact">
+      <header>
+        <div class="container">
+          <div class="navbar flex1">
+            <div class="logo">
+              <img src="image/logo.png" alt="logo" style="width: 60px;">
+            </div>
+
+            <nav>
+              <ul id="menuitem">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </nav>
+            <span class="fa fa-bars" onclick="menutoggle()"></span>
+
+            <div class="subscribe flex">
+              <i class="fas fa-search"></i>
+              <i id="palybtn" class="fas fa-user"></i>
+            </div>
+          </div>
+        </div>
+      </header>
+
+     
+
+
+  <script>
+    var menuitem = document.getElementById("menuitem");
+    menuitem.style.maxHeight = "0px";
+
+    function menutoggle() {
+      if (menuitem.style.maxHeight == '0px') {
+        menuitem.style.maxHeight = "200px"
+      } else {
+        menuitem.style.maxHeight = "0px"
+      }
+    }
+
+    window.addEventListener("scroll", function () {
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 50);
+    })
+  </script>
+
+  
+<div class="container-product">
+
+  <h3 class="title"> Our products </h3>
+
+  <div class="products-container">
+
+     <div class="product" data-name="p-1">
+        <img src="image/pro- (1).png" alt="">
+        <h3>Large Pre-Assembled Stainless Steel Foldable Clothes Drying Stand with Wheels</h3>
+        <div class="price"></div>
+     </div>
+
+     <div class="product" data-name="p-2">
+        <img src="image/pro- (2).png" alt="">
+        <h3>Durable Winged Laundry Dryer for Indoor & Outdoor Use</h3>
+        <div class="price"></div>
+     </div>
+
+     <div class="product" data-name="p-3">
+        <img src="image/pro- (3).png" alt="">
+        <h3>Stainless Steel Foldable Clothes Drying Rack</h3>
+        <div class="price"></div>
+     </div>
+
+     <div class="product" data-name="p-4">
+        <img src="image/pro- (4).png" alt="">
+        <h3>Mini Butterfly (Space-Saving, Quick Drying)</h3>
+        <div class="price"></div>
+     
+    </div>
+    
+     <div class="product" data-name="p-5">
+        <img src="image/pro- (5).png" alt="">
+        <h3>Foldable - Non-Slip Feet - Powder Coated - Viking Ironing Board, 161 cm,</h3>
+        <div class="price"></div>
+     </div>
+
+     <div class="product" data-name="p-6">
+        <img src="image/pro- (6).png" alt="">
+        <h3> Heavy-Duty Steel Kitchen, Office, & Home Organizer | Smooth Wheels & Epoxy Coating</h3>
+        <div class="price"></div>
+     </div>
+
+     <div class="product" data-name="p-7">
+      <img src="image/pro- (7).png" alt="">
+      <h3>Heavy-Duty Steel Kitchen, Office, & Home Organizer | Smooth Wheels & Epoxy Coating</h3>
+      <div class="price"></div>
+   </div>
+
+   <div class="product" data-name="p-8">
+    <img src="image/pro- (8).png" alt="">
+    <h3>Heavy-Duty Steel Kitchen, Office, & Home Organizer | Smooth Wheels & Epoxy Coating</h3>
+    <div class="price"></div>
+ </div>
+
+ <div class="product" data-name="p-9">
+  <img src="image/pro- (9).png" alt="">
+  <h3>Heavy-Duty Steel Kitchen, Office, & Home Organizer | Smooth Wheels & Epoxy Coating</h3>
+  <div class="price"></div>
+</div>
+
+
+
+  </div>
+
+</div>
+
+<div class="products-preview">
+
+  <div class="preview" data-target="p-1">
+     <i class="fas fa-times"></i>
+     <img src="image/pro- (1).png" alt="">
+     <h3>Large Pre-Assembled Stainless Steel Foldable Clothes Drying Stand with Wheels</h3>
+     <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        
+     </div>
+     <p> FENCINGKART Butterfly - Super Heavy Duty Extra Large Pre-Assembled Stainless Steel Foldable Clothes Drying Stand with Wheels</p>
+     <div class="price"></div>
+     <div class="buttons">
+        <a href="https://www.amazon.in/FENCINGKART-Butterfly-Pre-Assembled-Stainless-Foldable/dp/B0DCP6LJWM?ref_=ast_sto_dp" class="buy">buy now</a>
+        <a href="https://www.amazon.in/FENCINGKART-Butterfly-Pre-Assembled-Stainless-Foldable/dp/B0DCP6LJWM?ref_=ast_sto_dp" class="cart">add to cart</a>
+     </div>
+  </div>
+
+  <div class="preview" data-target="p-2">
+     <i class="fas fa-times"></i>
+     <img src="image/pro- (2).png" alt="">
+     <h3>Durable Winged Laundry Dryer for Indoor & Outdoor Use</h3>
+     <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <span></span>
+     </div>
+     <p>FENCINGKART New Winger Heavy-Duty Stainless Steel Foldable Clothes Drying Stand | Large Capacity, Easy Fold, Pre-Assembled | Durable Winged Laundry Dryer for Indoor & Outdoor Use</p>
+     <div class="price"></div>
+     <div class="buttons">
+        <a href="https://www.amazon.in/FENCINGKART-Foldable-Clothes-Heavy-Duty-Stainless/dp/B0DCP36X45?ref_=ast_sto_dp" class="buy">buy now</a>
+        <a href="https://www.amazon.in/FENCINGKART-Foldable-Clothes-Heavy-Duty-Stainless/dp/B0DCP36X45?ref_=ast_sto_dp" class="cart">add to cart</a>
+     </div>
+  </div>
+
+  <div class="preview" data-target="p-3">
+     <i class="fas fa-times"></i>
+     <img src="image/pro- (3).png" alt="">
+     <h3>Stainless Steel Foldable Clothes Drying Rack</h3>
+     <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <span></span>
+     </div>
+     <p>FENCINGKART Heavy Duty Extra Large Stand 3 Tier Stainless Steel Foldable Clothes Drying Rack (12 Rods Pre-Assembled)</p>
+     <div class="price"></div>
+     <div class="buttons">
+        <a href="https://www.amazon.in/FENCINGKART-Stainless-Foldable-Clothes-Pre-Assembled/dp/B0DCP3PQ59?ref_=ast_sto_dp&th=1" class="buy">buy now</a>
+        <a href="https://www.amazon.in/FENCINGKART-Stainless-Foldable-Clothes-Pre-Assembled/dp/B0DCP3PQ59?ref_=ast_sto_dp&th=1" class="cart">add to cart</a>
+     </div>
+  </div>
+
+  <div class="preview" data-target="p-4">
+     <i class="fas fa-times"></i>
+     <img src="image/pro- (4).png" alt="">
+     <h3>Mini Butterfly (Space-Saving, Quick Drying)</h3>
+     <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <span></span>
+     </div>
+     <p>FENCINGKART - Large, Pre-Assembled, Heavy-Duty Stainless Steel Foldable Clothes Drying Stand (Wing Style) - Mini Butterfly (Space-Saving, Quick Drying)</p>
+     <div class="price"></div>
+     <div class="buttons">
+        <a href="https://www.amazon.in/FENCINGKART-Pre-Assembled-Heavy-Duty-Stainless-Space-Saving/dp/B0DCP4YW3G?ref_=ast_sto_dp" class="buy">buy now</a>
+        <a href="https://www.amazon.in/FENCINGKART-Pre-Assembled-Heavy-Duty-Stainless-Space-Saving/dp/B0DCP4YW3G?ref_=ast_sto_dp" class="cart">add to cart</a>
+     </div>
+  </div>
+
+  <div class="preview" data-target="p-5">
+     <i class="fas fa-times"></i>
+     <img src="image/pro- (5).png" alt="">
+     <h3>Foldable - Non-Slip Feet - Powder Coated - Viking Ironing Board, 161 cm,</h3>
+     <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <span></span>
+     </div>
+     <p>FencingKart - Max Size - Premium Heavy Duty - Foldable - Non-Slip Feet - Powder Coated - Viking Ironing Board, 161 cm,</p>
+     <div class="price"></div>
+     <div class="buttons">
+        <a href="https://www.amazon.in/FencingKart-Premium-Foldable-Non-Slip-Ironing/dp/B0DCP412ZW?ref_=ast_sto_dp" class="buy">buy now</a>
+        <a href="https://www.amazon.in/FencingKart-Premium-Foldable-Non-Slip-Ironing/dp/B0DCP412ZW?ref_=ast_sto_dp" class="cart">add to cart</a>
+     </div>
+  </div>
+
+  <div class="preview" data-target="p-6">
+     <i class="fas fa-times"></i>
+     <img src="image/pro- (6).png" alt="">
+     <h3> Heavy-Duty Steel Kitchen, Office, & Home Organizer | Smooth Wheels & Epoxy Coating</h3>
+     <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <span></span>
+     </div>
+     <p>FENCINGKART - Round 3-Tier Rolling Trolley & Cart I Heavy-Duty Steel Kitchen, Office, & Home Organizer | Smooth Wheels & Epoxy Coating</p>
+     <div class="price"></div>
+     <div class="buttons">
+        <a href="https://www.amazon.in/FENCINGKART-Rolling-Trolley-Heavy-Duty-Organizer/dp/B0DCP42F8T?ref_=ast_sto_dp&th=1" class="buy">buy now</a>
+        <a href="https://www.amazon.in/FENCINGKART-Rolling-Trolley-Heavy-Duty-Organizer/dp/B0DCP42F8T?ref_=ast_sto_dp&th=1" class="cart">add to cart</a>
+     </div>
+  </div>
+
+  <div class="preview" data-target="p-7">
+    <i class="fas fa-times"></i>
+    <img src="image/pro- (7).png" alt="">
+    <h3>Heavy-Duty Steel Kitchen, Office, & Home Organizer | Smooth Wheels & Epoxy Coating</h3>
+    <div class="stars">
+       <i class="fas fa-star"></i>
+       <i class="fas fa-star"></i>
+       <i class="fas fa-star"></i>
+       <i class="fas fa-star"></i>
+       <i class="fas fa-star"></i>
+       <span></span>
+    </div>
+    <p>FENCINGKART - Round 4-Tier Rolling Trolley & Cart I Heavy-Duty Steel Kitchen, Office, & Home Organizer | Smooth Wheels & Epoxy Coating</p>
+    <div class="price"></div>
+    <div class="buttons">
+       <a href="https://www.amazon.in/FENCINGKART-Rolling-Trolley-Heavy-Duty-Organizer/dp/B0DCP4P5ZD?ref_=ast_sto_dp&th=1" class="buy">buy now</a>
+       <a href="https://www.amazon.in/FENCINGKART-Rolling-Trolley-Heavy-Duty-Organizer/dp/B0DCP4P5ZD?ref_=ast_sto_dp&th=1" class="cart">add to cart</a>
+    </div>
+ </div>
+
+ <div class="preview" data-target="p-8">
+  <i class="fas fa-times"></i>
+  <img src="image/pro- (8).png" alt="">
+  <h3>Heavy-Duty Steel Kitchen, Office, & Home Organizer | Smooth Wheels & Epoxy Coating</h3>
+  <div class="stars">
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <span></span>
+  </div>
+  <p>FENCINGKART - Square 4-Tier Rolling Trolley & Cart I Heavy-Duty Steel Kitchen, Office, & Home Organizer | Smooth Wheels & Epoxy Coating</p>
+  <div class="price"></div>
+  <div class="buttons">
+     <a href="https://www.amazon.in/FENCINGKART-Rolling-Trolley-Heavy-Duty-Organizer/dp/B0DCP4NHS2?ref_=ast_sto_dp&th=1" class="buy">buy now</a>
+     <a href="https://www.amazon.in/FENCINGKART-Rolling-Trolley-Heavy-Duty-Organizer/dp/B0DCP4NHS2?ref_=ast_sto_dp&th=1" class="cart">add to cart</a>
+  </div>
+</div>
+
+<div class="preview" data-target="p-9">
+  <i class="fas fa-times"></i>
+  <img src="image/pro- (9).png" alt="">
+  <h3>Heavy-Duty Steel Kitchen, Office, & Home Organizer | Smooth Wheels & Epoxy Coating</h3>
+  <div class="stars">
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <span></span>
+  </div>
+  <p>FencingKart - Square 3-Tier Rolling Trolley & Cart I Heavy-Duty Steel Kitchen, Office, & Home Organizer | Smooth Wheels & Epoxy Coating</p>
+  <div class="price"></div>
+  <div class="buttons">
+     <a href="https://www.amazon.in/FencingKart-Rolling-Trolley-Heavy-Duty-Organizer/dp/B0DCP4F2P2?ref_=ast_sto_dp&th=1" class="buy">buy now</a>
+     <a href="https://www.amazon.in/FencingKart-Rolling-Trolley-Heavy-Duty-Organizer/dp/B0DCP4F2P2?ref_=ast_sto_dp&th=1" class="cart">add to cart</a>
+  </div>
+</div>
+
+
+
+
+  
+
+</div>
+
+
+<div style="width: 4cm;;position: fixed;right: 0.2cm; bottom: 1cm;">
+  <a href=" https://wa.me/+17788181919"> <img src="image/whatsapp.png" alt="whatup" ></a>
+</div>
+  </div>
+</section>
+<footer>
+  <div class="container mtop">
+
+    <div class="box">
+      <h2>Contact Us</h2>
+      <p><i class="fab fa-whatsapp"></i> +1 7788181919</p>
+      <p><i class="fas fa-envelope"></i> fencingkartchd@gmail.com</p>
+      <p><i class="fas fa-map-marker-alt"></i> SCO: 301-302, Sector 35-B, <br>Chandigarh India, PIN - 160036</p>
+
+
+      
+    </div>
+
+
+    <div class="box">
+      <h2>Explore</h2>
+      <div class="flex">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="">Product</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="box ">
+      <h2>Amazon Services</h2>
+      <div class="flex">
+        <ul>
+          <li> <a
+              href="https://www.amazon.in/stores/page/65C3A8E8-2A11-4EAC-AE13-ACBD1102E452?ingress=2&visitId=a55d1ed7-7faa-462c-a832-7bb2f670bfc0&store_ref=bl_ast_dp_brandLogo_sto&ref_=ast_bln">Home</a>
+          </li>
+          <li><a
+              href="https://www.amazon.in/stores/page/D462A882-D8F2-4CE1-92A0-F61CF8E4777F?ingress=2&visitId=a55d1ed7-7faa-462c-a832-7bb2f670bfc0&store_ref=bl_ast_dp_brandLogo_sto&ref_=ast_bln">Stainless
+              Steel Drying Racks</a></li>
+          <li><a
+              href="https://www.amazon.in/stores/page/34D7CE24-2F36-4D4F-98C6-9A088A9C8344?ingress=2&visitId=a55d1ed7-7faa-462c-a832-7bb2f670bfc0&store_ref=bl_ast_dp_brandLogo_sto&ref_=ast_bln">Home
+              Utility Products</a></li>
+          <a href="https://www.facebook.com/profile.php?id=61564532753031"><i class="fab fa-facebook-square"></i></a>
+          <a href="https://www.instagram.com/fencingkart/?igsh=MWFydzdydWNwNHBpcw%3D%3D&utm_source=qr#"><i class="fab fa-instagram"></i></a>
+          <a href="https://x.com/FencingKar88002"><i class="fab fa-twitter-square"></i></a>
+          <a href="https://www.youtube.com/@FencingKart"> <i class="fab fa-youtube-square"></i></a>
+          <a href="https://in.pinterest.com/fencingkartchd/"> <i class="fab fa-pinterest-square"></i></a>
+        </ul>
+
+      </div>
+    </div>
+
+  </div>
+  <p class="legal">© 2025 FencingKart. All rights reserved.
+  </p>
+
+</footer>
+</body>
+<script src="script.js"></script>
+</html>

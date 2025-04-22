@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>FencingKart</title>
+    <link rel="shortcut icon" href="image/logo.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <!-- Owl Carousel css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <!-- Owl Carousel css-->
+
+
+  <!-- jquery css-->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <!-- jquery css-->
+
+</head>
+
+<body>
+  <section class="home-contact">
+    <div class="slider"></div>
+    <div class="headerbg-contact">
+      <header>
+        <div class="container">
+          <div class="navbar flex1">
+            <div class="logo">
+              <img src="image/logo.png" alt="logo" style="width: 60px;">
+            </div>
+
+            <nav>
+              <ul id="menuitem">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">About</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </nav>
+            <span class="fa fa-bars" onclick="menutoggle()"></span>
+
+            <div class="subscribe flex">
+              <i class="fas fa-search"></i>
+              <i id="palybtn" class="fas fa-user"></i>
+            </div>
+          </div>
+        </div>
+      </header>
+
+     
+
+
+  <script>
+    var menuitem = document.getElementById("menuitem");
+    menuitem.style.maxHeight = "0px";
+
+    function menutoggle() {
+      if (menuitem.style.maxHeight == '0px') {
+        menuitem.style.maxHeight = "200px"
+      } else {
+        menuitem.style.maxHeight = "0px"
+      }
+    }
+
+    window.addEventListener("scroll", function () {
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 50);
+    })
+  </script>
+<!-- =====contact======== -->
+
+<section class="contact-section">
+  <div class="contact-container">
+      <div class="contact-form">
+          <h2>Contact Us</h2>
+          <form action="https://formsubmit.co/fencingkartchd@gmail.com" method="POST">
+              <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" placeholder="Enter your name" required>
+              </div>
+              <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="Enter your email" required>
+              </div>
+              <div class="form-group">
+                  <label for="mobile">Mobile No</label>
+                  <input type="tel" id="mobile" name="mobile" placeholder="Enter your Mobile No" required>
+              </div>
+              <div class="form-group">
+                  <label for="address">Address</label>
+                  <input type="text" id="address" name="address" placeholder="Enter your Address" required>
+              </div>
+              <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" rows="4" placeholder="Your message" required></textarea>
+              </div>
+              <button type="submit" class="btn">Send Message</button>
+          </form>
+          <!-- javascript -->
+          <script>
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                
+                emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
+                    .then(function() {
+                        alert('Message sent successfully!');
+                        document.getElementById('contact-form').reset();
+                    }, function(error) {
+                        alert('Failed to send message: ' + JSON.stringify(error));
+                    });
+            });
+        </script>
+      </div>
+      <div class="contact-image"></div>
+  </div>
+</section>
+      
+<div style="width: 4cm;;position: fixed;right: 0.2cm; bottom: 1cm;">
+  <a href=" https://wa.me/+17788181919"> <img src="image/whatsapp.png" alt="whatup" ></a>
+</div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+<footer>
+  <div class="container mtop">
+
+    <div class="box">
+      <h2>Contact Us</h2>
+      <p><i class="fab fa-whatsapp"></i> +1 7788181919</p>
+      <p><i class="fas fa-envelope"></i> fencingkartchd@gmail.com</p>
+      <p><i class="fas fa-map-marker-alt"></i> SCO: 301-302, Sector 35-B, <br>Chandigarh India, PIN - 160036</p>
+
+
+      <!-- <div class="box">
+     
+        <div class="icon">
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter-square"></i>
+          <i class="fab fa-youtube-square"></i>
+        </div>
+      </div> -->
+    </div>
+
+
+    <div class="box">
+      <h2>Explore</h2>
+      <div class="flex">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="">Product</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="box ">
+      <h2>Amazon Services</h2>
+      <div class="flex">
+        <ul>
+          <li> <a
+              href="https://www.amazon.in/stores/page/65C3A8E8-2A11-4EAC-AE13-ACBD1102E452?ingress=2&visitId=a55d1ed7-7faa-462c-a832-7bb2f670bfc0&store_ref=bl_ast_dp_brandLogo_sto&ref_=ast_bln">Home</a>
+          </li>
+          <li><a
+              href="https://www.amazon.in/stores/page/D462A882-D8F2-4CE1-92A0-F61CF8E4777F?ingress=2&visitId=a55d1ed7-7faa-462c-a832-7bb2f670bfc0&store_ref=bl_ast_dp_brandLogo_sto&ref_=ast_bln">Stainless
+              Steel Drying Racks</a></li>
+          <li><a
+              href="https://www.amazon.in/stores/page/34D7CE24-2F36-4D4F-98C6-9A088A9C8344?ingress=2&visitId=a55d1ed7-7faa-462c-a832-7bb2f670bfc0&store_ref=bl_ast_dp_brandLogo_sto&ref_=ast_bln">Home
+              Utility Products</a></li>
+          <a href="https://www.facebook.com/profile.php?id=61564532753031"><i class="fab fa-facebook-square"></i></a>
+          <a href="https://www.instagram.com/fencingkart/?igsh=MWFydzdydWNwNHBpcw%3D%3D&utm_source=qr#"><i class="fab fa-instagram"></i></a>
+          <a href="https://x.com/FencingKar88002"><i class="fab fa-twitter-square"></i></a>
+          <a href="https://www.youtube.com/@FencingKart"> <i class="fab fa-youtube-square"></i></a>
+          <a href="https://in.pinterest.com/fencingkartchd/"> <i class="fab fa-pinterest-square"></i></a>
+        </ul>
+
+      </div>
+    </div>
+
+  </div>
+  <p class="legal">© 2025 FencingKart. All rights reserved.
+  </p>
+
+</footer>
+</body>
+<script src="script.js"></script>
+</html>
